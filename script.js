@@ -5,7 +5,7 @@ const navMenu = document.getElementById("navMenu");
 
 if (menuBtn && navMenu) {
 
-```
+ 
 menuBtn.addEventListener("click", () => {
 
     navMenu.classList.toggle("active");
@@ -33,7 +33,7 @@ navLinks.forEach(link => {
     });
 
 });
-```
+ 
 
 }
 
@@ -48,7 +48,7 @@ const imageButtons = document.querySelectorAll(".image-button");
 
 imageButtons.forEach(button => {
 
-```
+ 
 button.addEventListener("click", () => {
 
     const image = button.getAttribute("data-image");
@@ -63,7 +63,7 @@ button.addEventListener("click", () => {
     document.body.style.overflow = "hidden";
 
 });
-```
+ 
 
 });
 
@@ -71,21 +71,21 @@ button.addEventListener("click", () => {
 
 function closeImageLightbox() {
 
-```
+ 
 lightbox.classList.remove("active");
 
 lightboxImage.src = "";
 
 document.body.style.overflow = "";
-```
+ 
 
 }
 
 if (closeLightbox) {
 
-```
+ 
 closeLightbox.addEventListener("click", closeImageLightbox);
-```
+ 
 
 }
 
@@ -93,7 +93,7 @@ closeLightbox.addEventListener("click", closeImageLightbox);
 
 if (lightbox) {
 
-```
+ 
 lightbox.addEventListener("click", event => {
 
     if (event.target === lightbox) {
@@ -101,7 +101,7 @@ lightbox.addEventListener("click", event => {
     }
 
 });
-```
+ 
 
 }
 
@@ -109,12 +109,12 @@ lightbox.addEventListener("click", event => {
 
 document.addEventListener("keydown", event => {
 
-```
+ 
 if (event.key === "Escape" && lightbox.classList.contains("active")) {
 
     closeImageLightbox();
 
 }
-```
+ 
 
 });
